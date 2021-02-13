@@ -24,5 +24,3 @@ proverbial has hit the fan, which isn't always the case. Sometimes we're not tra
 don't have the right access. Sometimes we're not the right service.
 
 So here we have: Common Public Misconceptions About Calling 999.
-
-
