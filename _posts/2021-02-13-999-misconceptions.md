@@ -8,7 +8,7 @@ tags:
   - ambulance
   - nhs
   - uk
-excerpt: >
+excerpt: |
   People call 999 for all sorts of reasons. Most calls are genuine, even if misguided; fortunately, it's only a very small
   number of calls that are made in bad faith.
 
