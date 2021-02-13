@@ -11,7 +11,6 @@ tags:
 draft: true
 ---
 
-# Misconceptions about calling 999
 > For international readers, 999 is the UK's emergency number, equivalent to 911/112/000/etc.
 >
 > Also, it's going to get _very_ boring if I have to add "(for an ambulance)" every time I mention 999, so please assume
