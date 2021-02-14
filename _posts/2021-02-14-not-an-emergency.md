@@ -9,7 +9,6 @@ tags:
   - nhs
   - uk
 excerpt_separator: '<!-- end_excerpt -->'
-draft: true
 ---
 
 I've [written before]({{ site.baseurl }}{% post_url 2021-02-13-999-misconceptions %}) about public misconceptions when
