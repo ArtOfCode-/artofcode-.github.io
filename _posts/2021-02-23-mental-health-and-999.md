@@ -28,7 +28,7 @@ a mental health crisis. Which is a great start, but what hasn't yet caught up is
 Many of these calls end up coming to 999 because it's free, it's easy to access, and because it's one of the relatively
 few places that will do something _today_ to help, instead of deferring it &mdash; referring you elsewhere, or making an
 appointment for a later date, etc. The problem is that 999 is there for emergencies, and given the breadth of mental
-health issues, many situation either aren't immediate emergencies, or aren't _seen as_ emergencies.
+health issues, many situations either aren't immediate emergencies, or aren't _seen as_ emergencies.
 
 A medical or traumatic emergency is comparatively easy to define. We have vast amounts of experience to draw on, and
 it's relatively well-known what's life-threatening and what's not. Asthma attack? Check. Hypoglycaemia? Check. STEMI?
