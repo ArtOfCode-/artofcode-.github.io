@@ -4,10 +4,8 @@ title: Misconceptions about calling 999
 categories: 
   - '999'
 tags: 
-  - '999'
-  - ambulance
-  - nhs
-  - uk
+  - emergency
+  - misconceptions
 excerpt_separator: '<!-- end_excerpt -->'
 ---
 

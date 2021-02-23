@@ -4,10 +4,9 @@ title: Not an Emergency — or the "999 doesn't think I'm worth it" effect
 categories: 
   - '999'
 tags: 
-  - '999'
-  - ambulance
-  - nhs
-  - uk
+  - non-emergency
+  - urgent-care
+  - '111'
 excerpt_separator: '<!-- end_excerpt -->'
 ---
 
