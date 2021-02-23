@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mental Health and 999 — it's not always the best way
+title: Mental Health and 999 — not always the best way
 categories: 
   - '999'
 tags:
