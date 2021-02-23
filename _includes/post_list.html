@@ -1,0 +1,28 @@
+<article class="post">
+  <h1 class="title"><a href="{{ site.baseurl }}{{ include.post.url }}">{{ include.post.title }}</a></h1>
+  {% if include.post.categories %}
+    <h2 class="subtitle">
+      Posted in {{ include.post.categories | join: ', ' }}
+    </h2>
+  {% endif %}
+
+  {% if include.post.cw %}
+    <div class="fc-orange-darker fs-8">
+      <i class="fas fa-exclamation-triangle"></i> <strong>Content note:</strong> {{ include.post.cw }}
+    </div>
+  {% endif %}
+
+  <div class="entry">
+    {{ include.post.excerpt }}
+  </div>
+
+  {% if include.post.tags %}
+    <div class="tags">
+      {% for tag in include.post.tags %}
+        <span class="tag-blue">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <a href="{{ site.baseurl }}{{ include.post.url }}" class="read-more">Read More</a>
+</article>
