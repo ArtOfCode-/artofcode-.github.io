@@ -8,8 +8,13 @@ layout: default
       {% continue %}
     {% endif %}
     <article class="post">
-
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      {% if post.cw %}
+        <div class="fc-orange-darker fs-8">
+          <i class="fas fa-exclamation-triangle"></i> <strong>Content note:</strong> {{ post.cw }}
+        </div>
+      {% endif %}
 
       <div class="entry">
         {{ post.excerpt }}

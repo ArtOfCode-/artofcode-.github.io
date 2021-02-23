@@ -1,0 +1,82 @@
+@import 'variables';
+
+@each $color-name, $color in $color-map {
+  .fc-#{$color-name} {
+    color: $color !important;
+  }
+
+  a.fc-#{$color-name}:hover, a.fc-#{$color-name}:active {
+    color: $color;
+  }
+
+  .bc-#{$color-name} {
+    background: $color !important;
+  }
+
+  a.bc-#{$color-name}:hover, a.bc-#{$color-name}:active {
+    background: $color;
+  }
+}
+
+@each $color-name, $color in $colors {
+  .fc-#{$color-name} {
+    color: $color !important;
+  }
+
+  a.fc-#{$color-name}:hover, a.fc-#{$color-name}:active {
+    color: $color;
+  }
+
+  .bc-#{$color-name} {
+    background: $color !important;
+  }
+
+  a.bc-#{$color-name}:hover, a.bc-#{$color-name}:active {
+    background: $color;
+  }
+}
+
+@for $i from 5 to 35 {
+  .fs-#{$i} {
+    font-size: #{($i / 10)}em;
+  }
+}
+
+@for $i from 1 to 9 {
+  .fw-#{i}00 {
+    font-weight: #{$i}00;
+  }
+}
+
+$weights: (
+  'light': 200,
+  'normal': 400,
+  'bold': 700,
+  'heavy': 900
+);
+
+@each $name, $weight in $weights {
+  .fw-#{$name} {
+    font-weight: $weight;
+  }
+}
+
+.ff-sans {
+  font-family: $sans;
+}
+
+.ff-mono {
+  font-family: $mono;
+}
+
+$alignments: (
+  'l': left,
+  'c': center,
+  'r': right
+);
+
+@each $short, $align in $alignments {
+  .ta-#{$short} {
+    text-align: $align;
+  }
+}

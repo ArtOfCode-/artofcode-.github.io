@@ -1,23 +1,36 @@
-
-//
-// VARIABLES
-//
+@import 'utilities';
 
 // Colors
 $blue: #1887f5;
+$red: #f51950;
+$orange: #f56219;
+
+$colors: (
+  'blue': $blue,
+  'red': $red,
+  'orange': $orange
+);
+
+$color-map: color-maps($colors);
+
+@function color($color, $shade) {
+  @return map-get($color-map, #{$color}-#{$shade});
+}
 
 // Grays
 $black: #000;
 $darkerGray: #222;
 $darkGray: #333;
 $gray: #666;
-$lightGray: #eee;
+$lightGray: #ddd;
 $white: #fff;
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
+$sans: $helvetica;
+$mono: 'Fira Code', 'Bitstream Vera Sans Mono', 'Courier', monospace;
 
 // Mobile breakpoints
 @mixin mobile {

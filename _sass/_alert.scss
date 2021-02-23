@@ -1,0 +1,17 @@
+@import 'variables';
+
+@each $name, $color in $colors {
+  .alert-#{$name} {
+    display: block;
+    padding: 1em;
+    border-radius: 0.2em;
+    border: 1px solid color($name, 'darker');
+    background: color($name, 'lightest');
+    color: color($name, 'darkest');
+  }
+}
+
+.alert-sm {
+  padding: 0.5em 0.8em;
+  font-size: 0.8em;
+}
