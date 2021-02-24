@@ -1,0 +1,19 @@
+@import 'variables';
+
+@mixin tablet {
+  @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+    @content;
+  }
+}
+
+@mixin lg-desktop {
+  @media screen and (min-width: map-get($breakpoints, 'lg-desktop')) {
+    @content;
+  }
+}

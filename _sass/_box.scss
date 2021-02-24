@@ -1,0 +1,21 @@
+@import 'variables';
+
+@for $i from 0 to 6 {
+  .p-#{$i} {
+    padding: $box-base-unit * $i;
+  }
+
+  .m-#{$i} {
+    margin: $box-base-unit * $i;
+  }
+
+  @each $code, $dim in ('t': top, 'r': right, 'b': bottom, 'l': left) {
+    .p#{$code}-#{$i} {
+      padding-#{$dim}: $box-base-unit * $i;
+    }
+
+    .m#{$code}-#{$i} {
+      margin-#{$dim}: $box-base-unit * $i;
+    }
+  }
+}

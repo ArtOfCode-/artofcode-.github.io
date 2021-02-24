@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Shippori+Mincho&family=Source+Code+Pro&family=Open+Sans:ital@0;1&display=swap');
 @import 'variables';
 
 @each $color-name, $color in $color-map {
@@ -59,6 +60,10 @@ $weights: (
   .fw-#{$name} {
     font-weight: $weight;
   }
+}
+
+.ff-serif {
+  font-family: $serif;
 }
 
 .ff-sans {

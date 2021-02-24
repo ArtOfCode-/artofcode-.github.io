@@ -1,17 +1,9 @@
 ---
 ---
 
-// Reset & base styling
-@import "reset";
-@import "base";
-@import "text";
+@import 'base';
 
-// Base & sections
-@import "masthead";
-@import "main";
-
-// Additional element definitions
-@import "highlights";
-@import "svg-icons";
-@import "alert";
-@import "tags";
+@import 'text';
+@import 'box';
+@import 'alert';
+@import 'tags';

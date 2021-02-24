@@ -1,157 +1,190 @@
 @import 'variables';
+@import 'mixins';
 
-html {
-  font-size: 100%;
+* {
+  box-sizing: border-box;
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
+  font-size: 14px;
+  font-family: $sans;
+  color: $key;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
-
-  line-height: 1.4;
-  margin: 1em 0 15px;
-  padding: 0;
+  font-family: $serif;
 }
 
-h1 {
-  font-size: 30px;
-
-  a {
-    color: inherit;
+@for $i from 1 to 7 {
+  h#{$i} {
+    font-size: max(2.7em - ($i * 0.4em), 1.0em);
   }
-
-  &.title {
-    margin-bottom: 0;
-    line-height: 1.15;
-    font-family: $serif;
-  }
-}
-
-h2 {
-  font-size: 24px;
-
-  &.subtitle {
-    color: $gray;
-    text-transform: uppercase;
-    font-size: 1em;
-    font-weight: normal;
-    margin-top: 0.5em;
-
-    .category {
-      text-decoration: underline;
-    }
-  }
-}
-
-h3 {
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 18px;
-  color: $gray;
-}
-
-p {
-  margin: 15px 0;
-}
-
-a {
-  color: $blue;
-  text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
-    color: $blue;
-  }
-}
-
-ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
-}
-
-ul {
-  list-style-type: disc;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
-}
-
-ul ul, ol ul {
-  list-style-type: circle;
-}
-
-em, i {
-  font-style: italic;
-}
-
-strong, b {
-  font-weight: bold;
-}
-
-img {
-  max-width: 100%;
 }
 
 img.emoji {
   height: 1em;
   width: 1em;
   margin: 0 .05em 0 .1em;
-  vertical-align: -0.1em;
+  vertical-align: -.1em;
 }
 
-hr {
-  border: 0;
-  border-top: 1px solid $lightGray;
+a, a:visited {
+  color: color('blue', 'base');
+  text-decoration: underline;
+
+  &:hover, &:active {
+    text-decoration: none;
+  }
 }
 
-// Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-  max-width: none;
+blockquote {
+  margin: 1em 0;
+  border-left: 4px solid color('purple', 'base');
+  padding: 0.3em 0 0.3em 0.5em;
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.date {
-  font-style: italic;
-  color: $gray;
+.container {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  @include tablet {
+    flex-direction: row;
+  }
 }
 
-// Specify the color of the selection
-::-moz-selection {
-  color: $black;
-  background: color('orange', 'lightest');
-}
-::selection {
-  color: $black;
-  background: color('orange', 'lightest');
+.masthead {
+  padding: 1em;
+  background: double-stripe(color('primary', 'superdark'), color('green', 'darkest'));
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @include tablet {
+    position: fixed;
+    width: 25vw;
+    height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $sans;
+  }
+
+  a, a:visited, a:hover, a:active {
+    color: white;
+    text-decoration: none;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  .tagline {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: color('purple', 'lightest');
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+
+    a, a:visited, a:hover, a:active {
+      font-size: 1.8em;
+      margin: 0 0.3em;
+      color: color('purple', 'lightest');
+    }
+
+    .separator {
+      display: inline-block;
+      border-right: 1px solid color('purple', 'lightest');
+      height: 2.4em;
+      margin: 0 0.3em 0.2em 0.3em;
+    }
+  }
 }
 
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
+main {
+  padding: 1em;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.5;
 
-.clearfix:after {
-    clear: both;
+  @for $i from 1 to 7 {
+    h#{$i} {
+      font-size: max(1.8em - ($i * 0.2em), 1.0em);
+      line-height: 1.15;
+
+      a, a:visited {
+        color: color('purple', 'superdark');
+        text-decoration: none;
+      }
+    }
+  }
+
+  @include tablet {
+    text-align: left;
+    padding: 1em 2em;
+    position: absolute;
+    left: 25vw;
+    width: #{'min(70vw, 800px)'};
+  }
+
+  .page-title {
+    margin: 0 0 0.5em 0;
+
+    @include tablet {
+      margin: 0.5em 0;
+    }
+  }
+
+  .title {
+    margin: 1em 0 0.2em 0;
+  }
+
+  .subtitle {
+    margin: 0.2em 0 0.5em 0;
+    color: #666;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: $sans;
+    font-weight: normal;
+  }
+
+  @each $name, $color in $colors {
+    a.hook--#{$name}, a.hook--#{$name}:visited {
+      display: block;
+      color: color($name, 'darkest');
+      text-decoration: underline;
+      text-align: left;
+      margin: 0.5em 0;
+    }
+  }
+
+  .blank-list {
+    list-style: none;
+    text-align: left;
+
+    li {
+      margin: 0.3em 0;
+    }
+
+    .fa-fw {
+      font-size: 1.2em;
+    }
+  }
 }

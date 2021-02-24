@@ -1,16 +1,20 @@
 @function color-map($color, $values) {
   $base:      $values;
+  $superlite: mix(white, $values, 90%);
   $lightest:  mix(white, $values, 80%);
   $lighter:   mix(white, $values, 20%);
   $darker:    mix(#555, $values, 20%);
   $darkest:   mix(black, $values, 20%);
+  $superdark: mix(black, $values, 50%);
 
   $color-shades: (
       #{$color}-base:       $base,
+      #{$color}-superlight: $superlite,
       #{$color}-lightest:   $lightest,
       #{$color}-lighter:    $lighter,
       #{$color}-darker:     $darker,
-      #{$color}-darkest:    $darkest
+      #{$color}-darkest:    $darkest,
+      #{$color}-superdark:  $superdark
   );
 
   @return $color-shades;

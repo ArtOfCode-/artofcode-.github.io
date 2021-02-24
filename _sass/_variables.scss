@@ -1,14 +1,19 @@
 @import 'utilities';
 
-// Colors
-$blue: #1887f5;
-$red: #f51950;
-$orange: #f56219;
+$primary: #761ada;
+$blue: #1a7adb;
+$orange: #db6a1a;
+$red: #db1a4a;
+$green: #1adb5a;
+$key: #222;
 
 $colors: (
+  'primary': $primary,
+  'purple': $primary,
   'blue': $blue,
+  'orange': $orange,
   'red': $red,
-  'orange': $orange
+  'green': $green
 );
 
 $color-map: color-maps($colors);
@@ -17,25 +22,27 @@ $color-map: color-maps($colors);
   @return map-get($color-map, #{$color}-#{$shade});
 }
 
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #ddd;
-$white: #fff;
+$sans: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$serif: 'Shippori Mincho', 'Georgia', serif;
+$mono: 'Source Code Pro', 'Courier New', 'Courier', monospace;
 
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
-$serif: $georgia;
-$sans: $helvetica;
-$mono: 'Fira Code', 'Bitstream Vera Sans Mono', 'Courier', monospace;
+$breakpoints: (
+  'tablet': 768px,
+  'desktop': 996px,
+  'lg-desktop': 1218px
+);
 
-// Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 640px) {
-    @content;
-  }
+$box-base-unit: 5px;
+
+@function double-stripe($base, $highlight, $width: 7px, $add-start: 7px) {
+  @return linear-gradient(135deg,
+    $base $add-start + $width,
+    $highlight $add-start + $width,
+    $highlight $add-start + $width * 2,
+    $base $add-start + $width * 2,
+    $base $add-start + $width * 3,
+    $highlight $add-start + $width * 3,
+    $highlight $add-start + $width * 4,
+    $base $add-start + $width * 4
+  );
 }
