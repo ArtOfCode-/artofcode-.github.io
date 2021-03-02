@@ -6,7 +6,8 @@ layout: default
   <h1 class="page-title">{{ page.title }}</h1>
   {% if page.categories %}
     <h2 class="subtitle">
-      Posted in {{ page.categories | join: ', ' }}
+      {% assign primary_category = page.categories[0] %}
+      <span class="category-tag {{ site.cat_classes[primary_category] }}">{{ primary_category }}</span>
     </h2>
   {% endif %}
 

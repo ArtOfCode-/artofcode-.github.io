@@ -2,7 +2,8 @@
   <h1 class="title"><a href="{{ site.baseurl }}{{ include.post.url }}">{{ include.post.title }}</a></h1>
   {% if include.post.categories %}
     <h2 class="subtitle">
-      Posted in {{ include.post.categories | join: ', ' }}
+      {% assign primary_category = include.post.categories[0] %}
+      <span class="category-tag {{ site.cat_classes[primary_category] }}">{{ primary_category }}</span>
     </h2>
   {% endif %}
 

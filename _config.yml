@@ -11,6 +11,10 @@ social:
   github: https://github.com/ArtOfCode-
   stack-overflow: https://stackoverflow.com/users/3160466
 
+cat_classes:
+  '999': bc-green-darkest
+  dev: bc-purple-darkest
+
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
