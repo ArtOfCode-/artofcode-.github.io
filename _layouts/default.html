@@ -3,12 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="{{ site.description }}" />
+  {% if page.meta_tags %}
+    {% for tag in page.meta_tags %}
+      <meta name="{{ tag[0] }}" content="{{ tag[1] }}" />
+    {% endfor %}
+  {% elsif layout.meta_tags %}
+    {% for ltag in layout.meta_tags %}
+      <meta name="{{ ltag | hk }}" content="{{ ltag | hv | liquify | strip_html }}" />
+    {% endfor %}
+  {% else %}
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+    <meta name="og:image" content="{{ site.url }}{{ site.baseurl }}/images/favicon@128.png" />
+    <meta name="og:title" content="{{ site.name }}" />
+  {% endif %}
 
   <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.tagline }}</title>
 
   {% if page.permalink %}
-    <link rel="canonical" href="{{ site.baseurl }}{{ page.permalink }}" />
+    <link rel="canonical" href="{{ site.url}}{{ site.baseurl }}{{ page.permalink }}" />
   {% endif %}
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />

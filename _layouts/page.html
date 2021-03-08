@@ -1,5 +1,11 @@
 ---
 layout: default
+meta_tags:
+  - "og:type": website
+  - "og:title": "{{ page.title | liquify }}"
+  - "og:url": "{{ site.url | liquify }}{{ site.baseurl | liquify }}{{ page.permalink | liquify }}"
+  - "og:image": "{{ site.url | liquify }}{{ site.baseurl | liquify }}/images/favicon@128.png"
+  - "description": "{{ site.description | liquify }}"
 ---
 
 <article class="page">
