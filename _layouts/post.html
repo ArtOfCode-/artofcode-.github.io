@@ -5,14 +5,14 @@ meta_tags:
   - "og:title": "{{ page.title | liquify }}"
   - "og:url": "{{ site.url | liquify }}{{ site.baseurl | liquify }}{{ page.url | liquify }}"
   - "og:image": "{{ site.url | liquify }}{{ site.baseurl | liquify }}/images/favicon@128.png"
-  - "og:description": "{{ page.excerpt | truncate: 350 | liquify }}"
-  - "description": "{{ page.excerpt | truncate: 350 | liquify }}"
+  - "og:description": "{{ page.excerpt | truncate: 350 | replace: '\n', ' ' | liquify }}"
+  - "description": "{{ page.excerpt | truncate: 350 | replace: '\n', ' ' | liquify }}"
   - "article:published_time": "{{ page.date | date: '%B %e, %Y' | liquify }}"
   - "article:author": "ArtOfCode"
   - "article:tags": "{{ page.tags | join: ' ' | liquify }}"
   - "author": "ArtOfCode"
   - "twitter:creator": "_ArtOfCode"
-  - "twitter:description": "{{ page.excerpt | truncate: 240 | liquify }}"
+  - "twitter:description": "{{ page.excerpt | truncate: 240 | replace: '\n', ' ' | liquify }}"
 ---
 
 <article class="post">
