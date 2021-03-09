@@ -2,7 +2,7 @@
 layout: default
 meta_tags:
   - "og:type": article
-  - "og:title": "{{ page.title | liquify }}"
+  - "og:title": "{{ page.title | att_sanitize | liquify }}"
   - "og:url": "{{ site.url | liquify }}{{ site.baseurl | liquify }}{{ page.url | liquify }}"
   - "og:image": "{{ site.url | liquify }}{{ site.baseurl | liquify }}/images/favicon@128.png"
   - "og:description": "{{ page.excerpt | descriptionize: 350 | liquify }}"

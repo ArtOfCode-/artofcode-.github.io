@@ -18,6 +18,12 @@ module LiquidFilter
     s = s.gsub '"', '\"'
     s
   end
+
+  def att_sanitize(input)
+    s = input.gsub "\n", ' '
+    s = s.gsub '"', '\"'
+    s
+  end
 end
 
 Liquid::Template.register_filter(LiquidFilter)
