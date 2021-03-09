@@ -15,13 +15,13 @@ module LiquidFilter
     s = input[0...length]
     s = input.size > length ? "#{s}..." : input
     s = s.gsub "\n", ' '
-    s = s.gsub '"', '\"'
+    s = s.gsub '"', '&quot;'
     s
   end
 
   def att_sanitize(input)
     s = input.gsub "\n", ' '
-    s = s.gsub '"', '\"'
+    s = s.gsub '"', '&quot;'
     s
   end
 end
