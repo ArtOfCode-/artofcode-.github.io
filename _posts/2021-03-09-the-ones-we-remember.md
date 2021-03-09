@@ -43,7 +43,7 @@ one of two ways: either you calm the caller down and convince them that you are,
 there's no convincing them and your professionalism and politeness only annoys them more until they hang up on you.
 
 Most abuse directed at us is unintentional. Folks calling the emergency services are often in a stressful situation,
-and depending on how you manage stress that can come out in outburts of swearing and abuse. It's not personal. I can
+and depending on how you manage stress that can come out in outbursts of swearing and abuse. It's not personal. I can
 usually bank on getting at least one of these calls every shift.
 
 True abusive callers are more rare, and usually funnier because of how far-fetched some of the things that get said are.
