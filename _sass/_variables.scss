@@ -13,7 +13,8 @@ $colors: (
   'blue': $blue,
   'orange': $orange,
   'red': $red,
-  'green': $green
+  'green': $green,
+  'gray': #888
 );
 
 $color-map: color-maps($colors);

@@ -21,6 +21,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+hr {
+  border: 0;
+  border-bottom: 1px solid color('gray', 'lightest');
+}
+
 img.emoji {
   height: 1em;
   width: 1em;
@@ -49,6 +54,16 @@ blockquote {
   p:last-child {
     margin-bottom: 0;
   }
+}
+
+::selection {
+  background: color('orange', 'darker');
+  color: white;
+}
+
+::-moz-selection {
+  background: color('orange', 'darker');
+  color: white;
 }
 
 .container {
