@@ -10,6 +10,14 @@ module LiquidFilter
   def hv(input)
     input.to_a[0][1]
   end
+
+  def descriptionize(input, length)
+    s = input[0...length]
+    s = input.size > length ? "#{s}..." : input
+    s = s.gsub "\n", ' '
+    s = s.gsub '"', '\"'
+    s
+  end
 end
 
 Liquid::Template.register_filter(LiquidFilter)
