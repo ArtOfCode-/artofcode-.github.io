@@ -39,7 +39,8 @@ picking up the pieces? Absolutely.
 I can do that. I can get an Uber alone and be 99.9% sure I'll arrive safe at the other end. I can walk around the city
 in the dark and be reasonably confident of not being attacked &mdash; or at least that I might stand a fighting chance
 if I am. I can exist, in public, and not get catcalled, or raped, or murdered. And half the population (or 97% of half,
-according to the number that I've seen going around) can't? What the fuck, men? How is this just... accepted?
+according to the number that I've seen going around) can't? <mark>What the fuck, men?</mark> How is this just...
+accepted?
 
 It's not that I _didn't_ know about this, either. Offering to walk a friend home, or through the park, or checking in to
 make sure they got home safe, is second nature &mdash; though whether it _should_ be or not is a whole other question.
@@ -64,7 +65,39 @@ There's a lot of nuance and lots of odd little dynamics in our big dysfunctional
 the impression that a single brush paints us all.
 
 ## Breach of Trust
+What our emergency services do is incredible. We show up on people's worst days, and do our utmost to help and to make
+things better. It doesn't always work, of course it doesn't &mdash; crimes go unsolved, patients die, buildings burn
+down &mdash; but even in those worst cases knowing that the most highly-trained experts showed up and did everything
+possible can be a comfort. Folks recognise that, on the whole, and an emergency uniform often confers an instant level
+of respect and trust that not many other things can.
 
+That's an incredible privilege to have for those wearing the uniforms, no matter which service. Complete strangers will
+let us in, talk to us, confide in us, and quite literally put their lives in our hands _because they trust the uniform_.
+
+It's also an incredibly dangerous position to be in. The old saying &mdash; power corrupts; absolute power corrupts
+absolutely &mdash; applies equally well to the kind of unreserved trust folks will put in the emergency services.
+It's hard-won, but easily taken for granted and, if you're not careful, easily abused. Every service puts new recruits
+through training about this: people trust you as an extension of the uniform, and if you abuse that you abuse it for 
+everyone.
+
+Abduction and murder is already a horrific enough crime, but if there's a level of unforgivable beyond that
+unforgivable, that's it. Abusing the automatic trust placed in us through the uniforms to commit that crime? There are
+no words strong enough.
+
+## Moving On
+Moving on? How can you? Those close to Sarah may never be able to. But if there's one thing that taking 999 calls has
+taught _me_, it's that while the 55 people who've called me today were having the worst days of their lives, for me and
+for the rest of the world, it was just Tuesday. Regular old Tuesday. <mark>The world keeps going, even when you'd really
+like it to pause a moment out of respect.</mark>
+
+I don't want to keep being casually blind to the scale of the problem facing women's safety. Tonight, a colleague 
+&mdash; someone I'm proud to call a friend &mdash; texted me about being harassed on the train home, laughing it off as
+just another man being just another man. Male harassment and abuse and violence is endemic, and I have mostly swanned
+casually past it by privilege of birth. Since when is _that_ okay?
+
+I'm one person. I'm not a superhero, whatever people think of the emergency services. There's a limit to what I can do.
+But if I can make the world safer for one person &mdash; make one worst day better or maybe, just maybe, prevent it
+entirely &mdash; then that's worth it every time.
 
 -----
 

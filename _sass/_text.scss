@@ -85,3 +85,8 @@ $alignments: (
     text-align: $align;
   }
 }
+
+mark {
+  background: color('purple', 'superlight');
+  padding: 0 3px;
+}
