@@ -6,6 +6,7 @@ categories:
 tags:
   - 
 excerpt_separator: '<!-- end_excerpt -->'
+cw: trauma, graphic description
 ---
 
 "What's the worst call you've ever had?"
