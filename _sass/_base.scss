@@ -210,3 +210,12 @@ main {
     color: #666;
   }
 }
+
+.footnotes {
+  font-size: 0.8em;
+  border-top: 1px solid color('gray', 'lightest');
+
+  li p {
+    margin: 0.5em 0;
+  }
+}
