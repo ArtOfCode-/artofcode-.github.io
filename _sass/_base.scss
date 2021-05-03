@@ -219,3 +219,35 @@ main {
     margin: 0.5em 0;
   }
 }
+
+pre.highlight {
+  font-size: 0.8em;
+  overflow-x: auto;
+  padding: 0.2em;
+  margin-left: -18px;
+  width: calc(100% + 36px);
+
+  @include tablet {
+    margin-left: unset;
+    padding: 0.5em;
+    width: calc(min(calc(75vw - 6em), 960px) + 1em);
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-style: hidden;
+  width: 100%;
+  margin: 0.5em 0;
+
+  th, td {
+    border: 1px solid color('purple', 'lighter');
+    padding: 0.2em;
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  th {
+    border-bottom: 2px solid color('purple', 'lighter');
+  }
+}
