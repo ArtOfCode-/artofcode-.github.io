@@ -24,6 +24,10 @@ module LiquidFilter
     s = s.gsub '"', '&quot;'
     s
   end
+
+  def colorize(input, color, weight = 'normal')
+    "<span class=\"fw-#{weight} fc-#{color}\">#{input}</span>"
+  end
 end
 
 Liquid::Template.register_filter(LiquidFilter)

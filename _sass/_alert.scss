@@ -8,10 +8,16 @@
     border: 1px solid color($name, 'darker');
     background: color($name, 'lightest');
     color: color($name, 'darkest');
+    margin: 0.5em 0;
+
+    p {
+      margin: 0.2em 0;
+    }
   }
 }
 
 .alert-sm {
   padding: 0.5em 0.8em;
+  margin: 0.2em 0;
   font-size: 0.8em;
 }
