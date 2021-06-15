@@ -20,6 +20,7 @@ sass:
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-paginate
 
 exclude:
   - Gemfile
@@ -37,3 +38,5 @@ social:
 cat_classes:
   '999': bc-green-darkest
   dev: bc-purple-darkest
+
+paginate: 10

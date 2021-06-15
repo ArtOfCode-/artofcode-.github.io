@@ -6,6 +6,7 @@ $orange: #db6a1a;
 $red: #db1a4a;
 $green: #1adb5a;
 $key: #222;
+$gray: #888;
 
 $colors: (
   'primary': $primary,
@@ -14,7 +15,7 @@ $colors: (
   'orange': $orange,
   'red': $red,
   'green': $green,
-  'gray': #888
+  'gray':$gray
 );
 
 $color-map: color-maps($colors);

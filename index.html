@@ -3,10 +3,34 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     {% if post.draft %}
       {% continue %}
     {% endif %}
     {% include post_list.html post=post %}
   {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="pagination--link" title="Previous page" aria-label="Previous page">
+      &laquo;
+    </a>
+  {% else %}
+    <a href="javascript:void(0)" class="pagination--link disabled" title="Previous page" aria-label="Previous page">
+      &laquo;
+    </a>
+  {% endif %}
+  <a href="javascript:void(0)" class="pagination--link disabled">
+    {{ paginator.page }} of {{ paginator.total_pages }}
+  </a>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="pagination--link" title="Next page" aria-label="Next page">
+      &raquo;
+    </a>
+  {% else %}
+    <a href="javascript:void(0)" class="pagination--link disabled" title="Next page" aria-label="Next page">
+      &raquo;
+    </a>
+  {% endif %}
 </div>

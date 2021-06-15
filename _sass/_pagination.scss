@@ -1,0 +1,45 @@
+@import 'variables';
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .pagination--link {
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: $primary;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+    border-left: 1px solid $gray;
+
+    &:first-of-type {
+      border-top-left-radius: 0.2em;
+      border-bottom-left-radius: 0.2em;
+    }
+
+    &:last-of-type {
+      border-top-right-radius: 0.2em;
+      border-bottom-right-radius: 0.2em;
+      border-right: 1px solid $gray;
+    }
+
+    &:hover {
+      background: $primary;
+      color: white;
+    }
+
+    &.disabled {
+      color: color('gray', 'darker');
+      cursor: not-allowed;
+      pointer-events: none;
+
+      &:hover {
+        background: unset;
+        color: $primary;
+      }
+    }
+  }
+}
