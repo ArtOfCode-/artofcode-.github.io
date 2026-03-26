@@ -6,6 +6,7 @@
       <span class="category-tag {{ site.cat_classes[primary_category] }}">{{ primary_category }}</span>
     </h2>
   {% endif %}
+  <div class="date">{{ include.post.date | date: "%B %e, %Y" }}</div>
 
   {% if include.post.cw %}
     <div class="fc-orange-darker fs-8">
