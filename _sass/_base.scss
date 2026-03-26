@@ -105,7 +105,7 @@ blockquote {
   }
 
   h1 {
-    margin-bottom: 0;
+    margin-bottom: 0.8em;
   }
 
   .tagline {
@@ -132,6 +132,17 @@ blockquote {
       height: 2.4em;
       margin: 0 0.3em 0.2em 0.3em;
     }
+
+    &.full-links {
+      flex-direction: column;
+      margin-top: 1em;
+
+      a {
+        margin: 0.3em 0;
+        font-size: 1em;
+        text-decoration: underline;
+      }
+    }
   }
 }
 
@@ -148,7 +159,7 @@ main {
 
       a, a:visited {
         color: color('purple', 'superdark');
-        text-decoration: none;
+        text-decoration: underline;
       }
     }
   }

@@ -1,7 +1,7 @@
-name: Art 💙🏳️‍🌈
-tagline: Ambulances & Programming
-description: Part-time programmer & ambulance 999 operator from the UK
-url: https://words.artofcode.co.uk
+name: The Unprocessed Queue
+tagline: Community management, software development, and emergency response.
+description: CTO & community manager for Codidact; software developer and ambulance control room manager.
+url: https://artofcode-.github.io
 baseurl: ''
 
 permalink: /:slug/
@@ -29,11 +29,9 @@ exclude:
   - README.md
   - CNAME
 
-
 social:
-  twitter: https://twitter.com/_ArtOfCode
   github: https://github.com/ArtOfCode-
-  stack-overflow: https://stackoverflow.com/users/3160466
+  discord: https://discord.com/users/355501251947134996
 
 cat_classes:
   '999': bc-green-darkest

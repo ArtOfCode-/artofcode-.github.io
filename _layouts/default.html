@@ -9,7 +9,7 @@
     {% endfor %}
   {% elsif layout.meta_tags %}
     {% for ltag in layout.meta_tags %}
-      <meta name="{{ ltag | hk }}" content="{{ ltag | hv | liquify | strip_html }}" />
+      <meta name="{{ tag[0] }}" content="{{ tag[1] }}" />
     {% endfor %}
   {% else %}
     <meta name="description" content="{{ site.description }}" />
@@ -28,12 +28,6 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
-  <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      twemoji.parse(document.body);
-    });
-  </script>
 </head>
 <body>
   <div class="container">
@@ -44,6 +38,9 @@
         {% for social_hash in site.social %}
           <a href="{{ social_hash[1] }}" aria-label="{{ social_hash[0] }}"><i class="fab fa-fw fa-{{ social_hash[0] }}"></i></a>
         {% endfor %}
+      </nav>
+      <nav class="full-links">
+        <a href="https://meta.codidact.com/users/8045">Find me on Codidact</a>
       </nav>
     </div>
     <main>
