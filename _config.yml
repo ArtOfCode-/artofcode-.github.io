@@ -36,5 +36,6 @@ social:
 cat_classes:
   '999': bc-green-darkest
   dev: bc-purple-darkest
+  community: bc-orange-darkest
 
 paginate: 10

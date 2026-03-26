@@ -220,6 +220,10 @@ main {
     font-style: italic;
     color: #666;
   }
+
+  a, a:visited, a:hover, a:active {
+    color: color('purple', 'darkest');
+  }
 }
 
 .footnotes {
